@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinLogin</string>
+    <string name="mobile_no">Mobile no</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="verify">Verify</string>
+    <string name="otp">OTP</string>
+</resources>
