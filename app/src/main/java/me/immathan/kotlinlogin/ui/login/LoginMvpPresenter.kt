@@ -8,6 +8,6 @@ import me.immathan.kotlinlogin.ui.base.MvpView
  */
 interface LoginMvpPresenter<V: MvpView> : MvpPresenter<V> {
 
-    fun getOTP(mobile : String)
+    fun doLogin(mobile : String, password: String)
 
 }

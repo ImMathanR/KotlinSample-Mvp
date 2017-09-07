@@ -4,4 +4,6 @@
     <string name="get_otp">Get OTP</string>
     <string name="verify">Verify</string>
     <string name="otp">OTP</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
 </resources>

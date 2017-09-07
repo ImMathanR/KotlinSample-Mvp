@@ -12,7 +12,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:src="@drawable/fb_logo"/>
 
     <android.support.design.widget.CoordinatorLayout
@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="20dp">
+        android:layout_marginBottom="10dp">
 
         <LinearLayout
             android:id="@+id/loginPanel"
@@ -48,92 +48,51 @@
                 android:id="@+id/mobileNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="20dp"
                 android:gravity="center"
                 android:imeActionId="@+id/otp"
-                android:imeOptions="actionDone"
+                android:imeOptions="actionNext"
                 android:inputType="number"
+                android:maxLength="10"
+                android:textSize="18sp"
                 android:theme="@style/MyEditTextTheme"
-                android:textSize="16sp"
                 tools:ignore="InvalidImeActionId"/>
-
-        </LinearLayout>
-
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/getOtp"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_button_border"
-            android:paddingLeft="40dp"
-            android:paddingRight="40dp"
-            android:text="@string/get_otp"
-            android:textAllCaps="false"
-            app:layout_anchor="@id/loginPanel"
-            app:layout_anchorGravity="bottom|center"/>
-
-    </android.support.design.widget.CoordinatorLayout>
-
-    <android.support.design.widget.CoordinatorLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/otpCoordinator"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:layout_marginTop="20dp"
-        android:visibility="gone">
-
-        <LinearLayout
-            android:id="@+id/otpPanel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginBottom="30dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/rounded_border"
-            android:orientation="vertical"
-            android:padding="15dp">
 
             <android.support.v7.widget.AppCompatTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="@string/otp"
+                android:text="@string/password"
                 android:textColor="@color/white"
                 android:textSize="13sp"/>
 
             <android.support.v7.widget.AppCompatEditText
-                android:id="@+id/otp"
-                android:layout_width="200dp"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 android:gravity="center"
+                android:imeActionId="@+id/otp"
+                android:imeOptions="actionDone"
                 android:inputType="number"
-                android:letterSpacing="1.2"
-                android:maxLength="6"
-                android:padding="5dp"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
-                android:theme="@style/MyEditTextTheme"/>
+                android:textSize="18sp"
+                android:theme="@style/MyEditTextTheme"
+                tools:ignore="InvalidImeActionId"/>
 
         </LinearLayout>
 
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/verify"
+            android:id="@+id/login"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_button_border"
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
-            android:text="@string/verify"
+            android:text="@string/login"
             android:textAllCaps="false"
-            app:layout_anchor="@id/otpPanel"
+            app:layout_anchor="@id/loginPanel"
             app:layout_anchorGravity="bottom|center"/>
 
     </android.support.design.widget.CoordinatorLayout>

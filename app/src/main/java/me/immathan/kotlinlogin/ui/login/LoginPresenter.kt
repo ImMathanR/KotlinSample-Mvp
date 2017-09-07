@@ -9,7 +9,7 @@ import me.immathan.kotlinlogin.utils.StringUtils
  */
 class LoginPresenter<V : MvpView> : BasePresenter<V>(), LoginMvpPresenter<V> {
 
-    override fun getOTP(mobile: String) {
+    override fun doLogin(mobile: String, password: String) {
         if(StringUtils.isEmpty(mobile)) {
 
         }
