@@ -13,9 +13,9 @@ import uk.co.chrisjenx.calligraphy.CalligraphyConfig
  */
 class SampleApplication : Application() {
 
-    private lateinit var mDataManager: DataManager
-    private lateinit var mApiHelper: ApiHelper
-    private lateinit var mRestAdapter: RestAdapter
+    lateinit var dataManager: DataManager
+    lateinit var apiHelper: ApiHelper
+    lateinit var restAdapter: RestAdapter
 
     override fun onCreate() {
         super.onCreate()
@@ -23,8 +23,9 @@ class SampleApplication : Application() {
                 .setDefaultFontPath("fonts/Quicksand-Regular.ttf")
                 .build()
         CalligraphyConfig.initDefault(calligraphyConfig)
-        mApiHelper = AppApiHelper()
-        mDataManager = AppDataManager(mApiHelper)
+        restAdapter = RestAdapter()
+        apiHelper = AppApiHelper(restAdapter)
+        dataManager = AppDataManager(apiHelper)
     }
 
 }

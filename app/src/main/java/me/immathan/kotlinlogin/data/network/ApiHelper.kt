@@ -2,6 +2,8 @@ package me.immathan.kotlinlogin.data.network
 
 import me.immathan.kotlinlogin.data.LoginResponse
 import retrofit2.Call
+import retrofit2.http.GET
+import retrofit2.http.Query
 
 /**
  * Created by Mathan-GG on 05-Sep-17.
@@ -9,6 +11,7 @@ import retrofit2.Call
 
 interface ApiHelper {
 
-    fun doLogin(mobileNo: String, password: String) : Call<LoginResponse>
+    @GET("authenticate")
+    fun doLogin(@Query("mobileno") mobileNo: String,@Query("password") password: String) : Call<LoginResponse>
 
 }

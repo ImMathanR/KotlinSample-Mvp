@@ -5,14 +5,14 @@ package me.immathan.kotlinlogin.ui.base
  */
 open class BasePresenter<V : MvpView> : MvpPresenter<V> {
 
-    var mMvpView: V? = null
+    var mvpView: V? = null
 
     override fun onAttach(mvpView: V) {
-        mMvpView = mvpView
+        this.mvpView = mvpView
     }
 
     override fun onDetach() {
-        mMvpView = null
+        mvpView = null
     }
 
 }

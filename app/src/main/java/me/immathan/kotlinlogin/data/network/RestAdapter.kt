@@ -4,14 +4,16 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-
-
 /**
  * Created by Mathan-GG on 06-Sep-17.
  */
-class RestAdapter(private var mApiHelper: ApiHelper) {
+class RestAdapter {
 
-    private val API_BASE = "https://api.quikiride.com/v1.0/"
+    companion object {
+        private val API_BASE = "https://us-central1-friendly-chat-4a901.cloudfunctions.net/"
+    }
+
+    val apiHelper: ApiHelper
 
     init {
         val retrofit = Retrofit.Builder()
@@ -19,10 +21,6 @@ class RestAdapter(private var mApiHelper: ApiHelper) {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
 
-        mApiHelper = retrofit.create(ApiHelper::class.java)
-    }
-
-    fun getApiHelper(): ApiHelper {
-        return mApiHelper
+        apiHelper = retrofit.create(ApiHelper::class.java)
     }
 }

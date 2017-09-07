@@ -10,7 +10,7 @@ class StringUtils {
 
     companion object {
 
-        fun isEmpty(value: String): Boolean {
+        fun isNotEmpty(value: String): Boolean {
             return !TextUtils.isEmpty(value)
         }
 

@@ -6,28 +6,32 @@ import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_login.*
 import me.immathan.kotlinlogin.R
+import me.immathan.kotlinlogin.SampleApplication
 import me.immathan.kotlinlogin.ui.base.BaseActivity
 import me.immathan.kotlinlogin.ui.main.MainActivity
 
 
-
 class LoginActivity : BaseActivity(), LoginMvpView {
 
-    private var mLoginPresenter: LoginPresenter<LoginMvpView> = LoginPresenter()
+    private lateinit var loginPresenter: LoginPresenter<LoginMvpView>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        mLoginPresenter.onAttach(this)
+
+        loginPresenter = LoginPresenter((application as SampleApplication).dataManager)
+
+        loginPresenter.onAttach(this)
 
         login.setOnClickListener {
             showProgress()
-            mLoginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
+            loginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
         }
+
         password.setOnEditorActionListener(TextView.OnEditorActionListener { _, id, _ ->
             if (id == R.id.otp || id == EditorInfo.IME_ACTION_DONE) {
                 showProgress()
-                mLoginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
+                loginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
                 return@OnEditorActionListener true
             }
             false

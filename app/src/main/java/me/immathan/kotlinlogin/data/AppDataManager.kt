@@ -6,12 +6,10 @@ import retrofit2.Call
 /**
  * Created by Mathan-GG on 06-Sep-17.
  */
-class AppDataManager (mApiHelper: ApiHelper): DataManager {
-
-    private lateinit var mApiHelper: ApiHelper
+class AppDataManager (val apiHelper: ApiHelper): DataManager {
 
     override fun doLogin(mobileNo: String, password: String): Call<LoginResponse> {
-
+        return apiHelper.doLogin(mobileNo, password)
     }
 
 }

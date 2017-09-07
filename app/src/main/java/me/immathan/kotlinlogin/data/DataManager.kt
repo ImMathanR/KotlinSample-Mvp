@@ -7,5 +7,4 @@ import me.immathan.kotlinlogin.data.network.ApiHelper
  */
 interface DataManager : ApiHelper {
 
-
 }
