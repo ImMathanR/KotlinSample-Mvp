@@ -6,6 +6,7 @@ import com.google.gson.Gson
 import me.immathan.kotlinlogin.data.DataManager
 import me.immathan.kotlinlogin.data.LoginResponse
 import me.immathan.kotlinlogin.ui.base.BasePresenter
+import me.immathan.kotlinlogin.utils.Logger
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -31,7 +32,7 @@ class LoginPresenter<V : LoginMvpView>(private val dataManager: DataManager) : B
         }
 
         mvpView?.showProgress()
-        Log.d(TAG, "Sending login request")
+        Logger.d(TAG, "Sending login request")
         dataManager.doLogin(mobile, password).enqueue(object : Callback<LoginResponse?> {
             override fun onFailure(call: Call<LoginResponse?>?, t: Throwable?) {
                 Log.e(TAG, "Login failure")
@@ -43,7 +44,7 @@ class LoginPresenter<V : LoginMvpView>(private val dataManager: DataManager) : B
                 mvpView?.hideProgress()
                 if (response != null && response.isSuccessful) {
                     mvpView?.openMainActivity()
-                    Log.d(TAG, "Login success")
+                    Logger.d(TAG, "Login success")
                 } else {
                     if(response?.errorBody() != null) {
                         Log.e(TAG, "Login not success")
