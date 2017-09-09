@@ -8,6 +8,8 @@ import me.immathan.kotlinlogin.ui.base.MvpView
  */
 interface MainMvpPresenter<T: MvpView> : MvpPresenter<T> {
 
+    fun logout()
 
+    fun getName(): String?
 
 }

@@ -1,7 +1,6 @@
 package me.immathan.kotlinlogin.ui.login
 
 import android.text.TextUtils
-import android.util.Log
 import com.google.gson.Gson
 import me.immathan.kotlinlogin.data.DataManager
 import me.immathan.kotlinlogin.data.LoginResponse
@@ -35,7 +34,7 @@ class LoginPresenter<V : LoginMvpView>(private val dataManager: DataManager) : B
         Logger.d(TAG, "Sending login request")
         dataManager.doLogin(mobile, password).enqueue(object : Callback<LoginResponse?> {
             override fun onFailure(call: Call<LoginResponse?>?, t: Throwable?) {
-                Log.e(TAG, "Login failure")
+                Logger.e(TAG, "Login failure")
                 mvpView?.hideProgress()
                 mvpView?.onError(t?.localizedMessage!!)
             }
@@ -44,10 +43,12 @@ class LoginPresenter<V : LoginMvpView>(private val dataManager: DataManager) : B
                 mvpView?.hideProgress()
                 if (response != null && response.isSuccessful) {
                     mvpView?.openMainActivity()
+                    dataManager.saveToken(response.body()!!.token)
+                    dataManager.saveName(response.body()!!.name)
                     Logger.d(TAG, "Login success")
                 } else {
                     if(response?.errorBody() != null) {
-                        Log.e(TAG, "Login not success")
+                        Logger.e(TAG, "Login not success")
                         val gson = Gson()
                         val loginResponse = gson.fromJson(response.errorBody()!!.string(), LoginResponse::class.java)
                         mvpView?.onError(loginResponse.message)
@@ -57,4 +58,9 @@ class LoginPresenter<V : LoginMvpView>(private val dataManager: DataManager) : B
         })
     }
 
+    override fun isLoggedIn() {
+        if(!dataManager.getToken()?.isEmpty()!!) {
+            mvpView?.openMainActivity()
+        }
+    }
 }

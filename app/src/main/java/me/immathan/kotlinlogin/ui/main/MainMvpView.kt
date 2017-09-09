@@ -7,6 +7,6 @@ import me.immathan.kotlinlogin.ui.base.MvpView
  */
 interface MainMvpView: MvpView {
 
-    fun showGreetings(message: String)
+    fun gotoLoginActivity()
 
 }

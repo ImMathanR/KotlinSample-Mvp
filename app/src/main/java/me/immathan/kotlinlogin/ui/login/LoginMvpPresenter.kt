@@ -10,4 +10,6 @@ interface LoginMvpPresenter<V: MvpView> : MvpPresenter<V> {
 
     fun doLogin(mobile : String, password: String)
 
+    fun isLoggedIn()
+
 }

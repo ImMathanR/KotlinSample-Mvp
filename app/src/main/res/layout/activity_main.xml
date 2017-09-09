@@ -1,8 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     android:orientation="vertical">
 
-</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/tick"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/done"
+        android:tint="@color/colorPrimary"
+        app:backgroundTint="@color/white"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tick"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        android:text="@string/welcome"
+        android:textColor="#BBBBBB"
+        android:textSize="25sp"
+        tools:ignore="RtlSymmetry"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="50dp"
+        android:paddingStart="50dp"
+        fontPath="fonts/Quicksand-Bold.ttf"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        tools:ignore="RtlSymmetry"
+        tools:text="Walter White"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        fontPath="fonts/Quicksand-Bold.ttf"
+        android:text="@string/logout"
+        android:textColor="@color/logout_color_selector"
+        android:theme="@style/MyButtonTheme"
+        tools:ignore="RtlHardcoded"/>
+
+</RelativeLayout>

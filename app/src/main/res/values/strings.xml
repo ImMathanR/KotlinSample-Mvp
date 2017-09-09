@@ -7,4 +7,7 @@
     <string name="password">PASSWORD</string>
     <string name="login">LOGIN</string>
     <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="success">Success</string>
+    <string name="logout">Logout</string>
+    <string name="welcome">Welcome</string>
 </resources>

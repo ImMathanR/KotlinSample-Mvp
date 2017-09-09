@@ -1,5 +1,6 @@
 package me.immathan.kotlinlogin.ui.login
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.inputmethod.EditorInfo
@@ -16,6 +17,10 @@ class LoginActivity : BaseActivity(), LoginMvpView {
 
     private lateinit var loginPresenter: LoginPresenter<LoginMvpView>
 
+    companion object {
+        fun getNewIntent(context: Context) = Intent(context,LoginActivity::class.java)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -23,16 +28,15 @@ class LoginActivity : BaseActivity(), LoginMvpView {
         loginPresenter = LoginPresenter((application as SampleApplication).dataManager)
 
         loginPresenter.onAttach(this)
+        loginPresenter.isLoggedIn()
 
         login.setOnClickListener {
-            showProgress()
             password.hideKeyboard()
             loginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
         }
 
         password.setOnEditorActionListener(TextView.OnEditorActionListener { _, id, _ ->
             if (id == R.id.otp || id == EditorInfo.IME_ACTION_DONE) {
-                showProgress()
                 password.hideKeyboard()
                 loginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
                 return@OnEditorActionListener true
@@ -48,6 +52,7 @@ class LoginActivity : BaseActivity(), LoginMvpView {
     override fun openMainActivity() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
+        finish()
     }
 
 }

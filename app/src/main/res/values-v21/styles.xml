@@ -13,4 +13,11 @@
         <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
     </style>
 
+    <style name="MyButtonTheme">
+
+        <item name="colorButtonNormal">@android:color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+
+    </style>
+
 </resources>
