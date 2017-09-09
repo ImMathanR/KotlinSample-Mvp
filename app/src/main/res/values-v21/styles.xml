@@ -3,6 +3,7 @@
     <style name="AppTheme.Login" parent="AppTheme">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
     </style>
 
     <style name="MyEditTextTheme">

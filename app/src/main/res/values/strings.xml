@@ -10,4 +10,5 @@
     <string name="success">Success</string>
     <string name="logout">Logout</string>
     <string name="welcome">Welcome</string>
+    <string name="please_wait">Please wait</string>
 </resources>
