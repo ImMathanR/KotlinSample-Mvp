@@ -4,7 +4,7 @@ import me.immathan.kotlinlogin.data.LoginResponse
 import retrofit2.Call
 
 /**
- * Created by Mathan-GG on 06-Sep-17.
+ * Created by Mathan on 06-Sep-17.
  */
 class AppApiHelper(private var mRestAdapter: RestAdapter) : ApiHelper {
 

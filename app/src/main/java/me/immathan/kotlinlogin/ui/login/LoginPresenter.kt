@@ -11,7 +11,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 /**
- * Created by Mathan-GG on 05-Sep-17.
+ * Created by Mathan on 05-Sep-17.
  */
 class LoginPresenter<V : LoginMvpView>(private val dataManager: DataManager) : BasePresenter<V>(), LoginMvpPresenter<V> {
 

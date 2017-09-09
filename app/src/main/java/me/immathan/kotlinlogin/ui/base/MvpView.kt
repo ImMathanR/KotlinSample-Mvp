@@ -3,7 +3,7 @@ package me.immathan.kotlinlogin.ui.base
 import android.support.annotation.StringRes
 
 /**
- * Created by Mathan-GG on 02-Sep-17.
+ * Created by Mathan on 02-Sep-17.
  */
 interface MvpView {
 

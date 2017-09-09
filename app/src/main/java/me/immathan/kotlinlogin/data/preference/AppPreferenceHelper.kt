@@ -4,7 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 
 /**
- * Created by Mathan-GG on 09-Sep-17.
+ * Created by Mathan on 09-Sep-17.
  */
 class AppPreferenceHelper(context: Context, fileName: String, private var sharedPreferences: SharedPreferences? = null) : PreferenceHelper {
 

@@ -13,7 +13,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
 
 /**
- * Created by Mathan-GG on 02-Sep-17.
+ * Created by Mathan on 02-Sep-17.
  */
 abstract class BaseActivity : AppCompatActivity(), MvpView {
 

@@ -11,7 +11,7 @@ import me.immathan.kotlinlogin.data.preference.PreferenceHelper
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 
 /**
- * Created by Mathan-GG on 02-Sep-17.
+ * Created by Mathan on 02-Sep-17.
  */
 class SampleApplication : Application() {
 

@@ -5,7 +5,7 @@ import me.immathan.kotlinlogin.data.preference.PreferenceHelper
 import retrofit2.Call
 
 /**
- * Created by Mathan-GG on 06-Sep-17.
+ * Created by Mathan on 06-Sep-17.
  */
 class AppDataManager (private val apiHelper: ApiHelper, private val preferenceHelper: PreferenceHelper): DataManager {
 

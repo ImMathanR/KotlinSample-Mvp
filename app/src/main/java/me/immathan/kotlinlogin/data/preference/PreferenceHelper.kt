@@ -1,7 +1,7 @@
 package me.immathan.kotlinlogin.data.preference
 
 /**
- * Created by Mathan-GG on 06-Sep-17.
+ * Created by Mathan on 06-Sep-17.
  */
 interface PreferenceHelper {
 

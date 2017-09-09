@@ -3,7 +3,7 @@ package me.immathan.kotlinlogin.utils
 import android.content.Context
 
 /**
- * Created by Mathan-GG on 04-Sep-17.
+ * Created by Mathan on 04-Sep-17.
  */
 class NetworkUtils {
 

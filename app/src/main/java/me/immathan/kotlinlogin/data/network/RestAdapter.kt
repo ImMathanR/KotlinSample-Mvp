@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 
 /**
- * Created by Mathan-GG on 06-Sep-17.
+ * Created by Mathan on 06-Sep-17.
  */
 class RestAdapter {
 

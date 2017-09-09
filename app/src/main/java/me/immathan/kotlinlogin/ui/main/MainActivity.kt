@@ -14,7 +14,7 @@ import me.immathan.kotlinlogin.ui.login.LoginActivity
 
 
 /**
- * Created by Mathan-GG on 05-Sep-17.
+ * Created by Mathan on 05-Sep-17.
  */
 class MainActivity : BaseActivity(), MainMvpView {
 

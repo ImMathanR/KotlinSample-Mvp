@@ -3,7 +3,7 @@ package me.immathan.kotlinlogin.utils
 import android.util.Log
 
 /**
- * Created by Mathan-GG on 08-Sep-17.
+ * Created by Mathan on 08-Sep-17.
  */
 class Logger {
 

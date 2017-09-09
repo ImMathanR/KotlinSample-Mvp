@@ -6,7 +6,7 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 /**
- * Created by Mathan-GG on 05-Sep-17.
+ * Created by Mathan on 05-Sep-17.
  */
 
 interface ApiHelper {
