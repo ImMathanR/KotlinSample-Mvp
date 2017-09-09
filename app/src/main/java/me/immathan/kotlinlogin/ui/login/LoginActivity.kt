@@ -26,15 +26,15 @@ class LoginActivity : BaseActivity(), LoginMvpView {
 
         login.setOnClickListener {
             showProgress()
+            password.hideKeyboard()
             loginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
-            hideKeyboard(password)
         }
 
         password.setOnEditorActionListener(TextView.OnEditorActionListener { _, id, _ ->
             if (id == R.id.otp || id == EditorInfo.IME_ACTION_DONE) {
                 showProgress()
+                password.hideKeyboard()
                 loginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
-                hideKeyboard(password)
                 return@OnEditorActionListener true
             }
             false
