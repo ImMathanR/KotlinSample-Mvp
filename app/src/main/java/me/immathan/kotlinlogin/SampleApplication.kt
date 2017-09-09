@@ -21,6 +21,7 @@ class SampleApplication : Application() {
         super.onCreate()
         val calligraphyConfig = CalligraphyConfig.Builder()
                 .setDefaultFontPath("fonts/Quicksand-Regular.ttf")
+                .setFontAttrId(R.attr.fontPath)
                 .build()
         CalligraphyConfig.initDefault(calligraphyConfig)
         restAdapter = RestAdapter()

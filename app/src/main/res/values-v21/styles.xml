@@ -7,9 +7,9 @@
 
     <style name="MyEditTextTheme">
         <!-- Used for the bottom line when not selected / focused -->
-        <item name="colorControlNormal">#BBBBBB</item>
-        <item name="android:colorControlActivated">@color/white</item>
-        <item name="android:colorControlHighlight">@color/white</item>
+        <item name="colorControlNormal">#9e9e9e</item>
+        <item name="android:colorControlActivated">@color/colorPrimary</item>
+        <item name="android:colorControlHighlight">@color/colorPrimary</item>
         <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
     </style>
 

@@ -9,6 +9,7 @@ import me.immathan.kotlinlogin.R
 import me.immathan.kotlinlogin.SampleApplication
 import me.immathan.kotlinlogin.ui.base.BaseActivity
 import me.immathan.kotlinlogin.ui.main.MainActivity
+import me.immathan.kotlinlogin.utils.hideKeyboard
 
 
 class LoginActivity : BaseActivity(), LoginMvpView {
@@ -26,12 +27,14 @@ class LoginActivity : BaseActivity(), LoginMvpView {
         login.setOnClickListener {
             showProgress()
             loginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
+            hideKeyboard(password)
         }
 
         password.setOnEditorActionListener(TextView.OnEditorActionListener { _, id, _ ->
             if (id == R.id.otp || id == EditorInfo.IME_ACTION_DONE) {
                 showProgress()
                 loginPresenter.doLogin(mobileNo.text.toString(), password.text.toString())
+                hideKeyboard(password)
                 return@OnEditorActionListener true
             }
             false

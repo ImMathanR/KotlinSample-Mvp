@@ -8,8 +8,8 @@ import android.util.Log
 class Logger {
 
     companion object {
-        private val LOGTAG : String = "KOTLIN_SAMPLE"
-        private val DEBUG = Log.isLoggable(LOGTAG, Log.DEBUG);
+        private val LOG_TAG: String = "KOTLIN_SAMPLE"
+        private val DEBUG = Log.isLoggable(LOG_TAG, Log.DEBUG)
 
         fun i(tag: String, msg: String) {
             Log.i(tag, msg)

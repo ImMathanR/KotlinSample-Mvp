@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">KotlinLogin</string>
-    <string name="mobile_no">Mobile no</string>
+    <string name="mobile_no">MOBILE NO</string>
     <string name="get_otp">Get OTP</string>
     <string name="verify">Verify</string>
     <string name="otp">OTP</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
 </resources>
