@@ -11,9 +11,15 @@ The repository contains simple Login Sample with the following learnings.
 * Kotlin
 * MVP Architecture
 
-Also, MVP Architecture is mainly inspired from [Mindorks MVP Android Architecture](https://github.com/MindorksOpenSource/android-mvp-architecture) but without Dependency Injection and RxJava.
+Also, MVP Architecture is mainly inspired from [Mindorks MVP Android Architecture](https://github.com/MindorksOpenSource/android-mvp-architecture), but mainly concentrates on demonstrates the problem without having third party libraries like Dependency Injection(Dagger) and RxJava.
 
 Thanks to [Behnam Sobhkhiz](https://www.uplabs.com/behnamsobhkhiz) for his brilliant Login screen design.
+
+----------
+
+### Download ###
+
+You can download the sample [here](https://firebasestorage.googleapis.com/v0/b/friendly-chat-4a901.appspot.com/o/app-debug.apk?alt=media&token=62fca785-33b3-466f-a2b6-dc1f8145dde6)
 
 ----------
 
