@@ -24,6 +24,10 @@ Also, the MVP Architecture is inspired from [Mindorks MVP Android Architecture](
 
 You can download the sample [here.](https://firebasestorage.googleapis.com/v0/b/friendly-chat-4a901.appspot.com/o/app-debug.apk?alt=media&token=654fccba-fbb5-44eb-9a0a-c06396f3e215)
 
+Do login with the following credentials 
+
+> Mobile no - 8812345678   
+> Password - saymyname
 ----------
 
 ### Demo ###
