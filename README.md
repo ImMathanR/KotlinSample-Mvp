@@ -4,12 +4,12 @@
 
 ----------
 
-This Project is mainly focused on implementing MVP Pattern in Android with Kotlin. Also, it concentrates on best practices like **De-coupling** and **Moduling**.
+This Project is mainly focused on implementing MVP Pattern in Android with Kotlin.
 
 The repository contains simple Login Sample with the following learnings.
     
-: Kotlin
-: MVP Architecture
+* Kotlin
+* MVP Architecture
 
 Also, MVP Architecture is mainly inspired from [Mindorks MVP Android Architecture](https://github.com/MindorksOpenSource/android-mvp-architecture) but without Dependency Injection and RxJava.
 
