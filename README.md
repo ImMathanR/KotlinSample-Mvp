@@ -2,8 +2,6 @@
 
 ![Image](img/banner.png)
 
-----------
-
 This Project is mainly focused on implementing MVP Pattern in Android with Kotlin.
 
 The repository contains simple Login screen and welcome screen with the following learnings.
@@ -24,7 +22,7 @@ Also, the MVP Architecture is mainly inspired from [Mindorks MVP Android Archite
 
 ### Download ###
 
-You can download the sample [here](https://firebasestorage.googleapis.com/v0/b/friendly-chat-4a901.appspot.com/o/app-debug.apk?alt=media&token=62fca785-33b3-466f-a2b6-dc1f8145dde6)
+You can download the sample [here](https://firebasestorage.googleapis.com/v0/b/friendly-chat-4a901.appspot.com/o/app-debug.apk?alt=media&token=654fccba-fbb5-44eb-9a0a-c06396f3e215)
 
 ----------
 
