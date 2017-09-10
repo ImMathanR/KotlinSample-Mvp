@@ -6,14 +6,19 @@
 
 This Project is mainly focused on implementing MVP Pattern in Android with Kotlin.
 
-The repository contains simple Login Sample with the following learnings.
+The repository contains simple Login screen and welcome screen with the following learnings.
     
 * Kotlin
 * MVP Architecture
 
-Also, MVP Architecture is mainly inspired from [Mindorks MVP Android Architecture](https://github.com/MindorksOpenSource/android-mvp-architecture), but mainly concentrates on demonstrates the problem without having third party libraries like Dependency Injection(Dagger) and RxJava.
+Also, the MVP Architecture is mainly inspired from [Mindorks MVP Android Architecture](https://github.com/MindorksOpenSource/android-mvp-architecture), but mainly concentrates on demonstrating the architecture without introducing the third party libraries like Dependency Injection(Dagger) and RxJava.
 
-Thanks to [Behnam Sobhkhiz](https://www.uplabs.com/behnamsobhkhiz) for his brilliant Login screen design.
+----------
+
+### Thanks ###  
+
+* [Behnam Sobhkhiz](https://www.uplabs.com/behnamsobhkhiz) for his brilliant Login screen design.
+* [Mindorks Community](http://github.com/mindorksOpenSource/) for their excellent implementation of MVP Architecture.
 
 ----------
 
@@ -31,6 +36,17 @@ You can download the sample [here](https://firebasestorage.googleapis.com/v0/b/f
 Login screen                                  |  Main Screen                                 |  
 :--------------------------------------------:|:--------------------------------------------:|
 <img src="img/screenshot-1.png" width="200">  |<img src="img/screenshot-2.png" width="200">  |
+
+---------
+
+### Yet to finish ###
+
+* Test cases
+* Implementing Broadcast
+* Service
+* And more
+
+---------
 
 ### License
 ```
