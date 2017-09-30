@@ -43,7 +43,7 @@ class SampleApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         val calligraphyConfig = CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/Quicksand-Regular.ttf")
+                .setDefaultFontPath("fonts/GothamRoundedMedium.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         CalligraphyConfig.initDefault(calligraphyConfig)

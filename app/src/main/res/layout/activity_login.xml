@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@color/colorPrimary">
+            android:background="@drawable/login_background_gradient">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -75,8 +75,7 @@
                 android:gravity="center"
                 android:text="@string/login"
                 android:textColor="#333333"
-                android:textSize="18sp"
-                fontPath="fonts/Quicksand-Bold.ttf"/>
+                android:textSize="17sp"/>
 
             <android.support.v7.widget.AppCompatTextView
                 android:layout_width="wrap_content"
@@ -85,21 +84,20 @@
                 android:gravity="center"
                 android:text="@string/mobile_no"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="9sp"
-                fontPath="fonts/Quicksand-Bold.ttf"/>
+                android:textSize="8sp"/>
 
             <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/mobileNo"
+                fontPath="fonts/GothamRoundedBold.ttf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:imeActionId="@+id/otp"
                 android:imeOptions="actionNext"
                 android:inputType="number"
-                fontPath="fonts/Quicksand-Bold.ttf"
                 android:maxLength="10"
-                android:textColor="#616161"
-                android:textSize="18sp"
+                android:textColor="#6E6E6E"
+                android:textSize="21sp"
                 android:theme="@style/MyEditTextTheme"
                 tools:ignore="InvalidImeActionId"/>
 
@@ -109,20 +107,19 @@
                 android:gravity="center"
                 android:text="@string/password"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="9sp"
-                fontPath="fonts/Quicksand-Bold.ttf"/>
+                android:textSize="8sp"/>
 
             <android.support.v7.widget.AppCompatEditText
                 android:id="@+id/password"
+                fontPath="fonts/GothamRoundedBold.ttf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="30dp"
                 android:imeActionId="@+id/otp"
                 android:imeOptions="actionDone"
                 android:inputType="textPassword"
-                android:textColor="#616161"
-                android:textSize="18sp"
-                fontPath="fonts/Quicksand-Bold.ttf"
+                android:textColor="#6E6E6E"
+                android:textSize="21sp"
                 android:theme="@style/MyEditTextTheme"
                 tools:ignore="InvalidImeActionId"/>
 
@@ -137,10 +134,9 @@
             android:layout_marginRight="50dp"
             android:background="@drawable/rounded_button_border"
             android:elevation="10dp"
-            fontPath="fonts/Quicksand-Bold.ttf"
             android:text="@string/login"
             android:textAllCaps="false"
-            android:textSize="12sp"
+            android:textSize="11sp"
             app:layout_anchor="@id/loginPanel"
             app:layout_anchorGravity="bottom|center"/>
 
@@ -153,8 +149,7 @@
         android:layout_marginBottom="30dp"
         android:gravity="center"
         android:text="@string/forgot_password"
-        android:textColor="#444444"
-        android:textSize="12sp"
-        fontPath="fonts/Quicksand-Bold.ttf"/>
+        android:textColor="#6E6E6E"
+        android:textSize="12sp"/>
 
 </FrameLayout>
